@@ -91,7 +91,8 @@ for (var tries = 4; tries > 0; tries--){
 //Question 7
 var solution7 = ['JIM BUTCHER', 'PATRICK ROTHFUSS', 'BRANDON SANDERSON'];
 var successFlag = false;
-for (var tries = 6; tries > 0; tries--){
+var tries = 6;
+while (tries > 0){
   var answer7 = prompt('Who is one of my top 3 favorite authors? You have ' + tries + ' tries left.').toUpperCase();
   console.log('User\'s answer to question 7: ' + answer7);
   for (var solution = 0; solution <= solution7.length; solution++){
@@ -107,6 +108,7 @@ for (var tries = 6; tries > 0; tries--){
   } else {
     alert('Sorry incorrect.');
   }
+  tries--;
 }
 if (successFlag === false){
   alert('Sorry the correct answers are one of the following: ' + solution7[0] + ', ' + solution7[1] + ', or ' + solution7[2] + '.');
