@@ -6,7 +6,7 @@ var userName = prompt('What is your name?');
 console.log('The userName is: ' + userName);
 
 var score = 0;
-var totalQuestions = 5;
+var totalQuestions = 6;
 
 alert('Hello ' + userName + ' Let\'s play a guessing game about me! Please type Y or N.');
 
@@ -63,6 +63,19 @@ if (answer5 === 'Y' || answer5 === 'YES') {
   score++;
 } else {
   alert('You must enter in Y or N, you failed this question.');
+}
+
+var solution6 = 7;
+for (var trys = 4; trys > 0; trys--){
+  var answer6 = prompt('Pick a number between 1 and 10. You have ' + trys + ' tries left.').toUpperCase();
+  console.log('User\'s answer to question 6: ' + answer6);
+  if (isNaN(parseInt(answer6))){
+    alert('Please enter a number in number form.');
+  } else if (parseInt(answer6) === solution6){
+    alert('You guessed correctly, the correct answer is ' + solution6);
+    score++;
+    break;
+  }
 }
 
 alert('Your score is ' + score + '/' + totalQuestions);
