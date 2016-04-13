@@ -104,6 +104,8 @@ for (var tries = 6; tries > 0; tries--){
   }
   if (successFlag === true){
     break;
+  } else {
+    alert('Sorry incorrect.');
   }
 }
 if (successFlag === false){
