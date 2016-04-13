@@ -1,10 +1,12 @@
-//201 Day 2 Lab assignment guessing game js.
+//201 Day 2, 3 Lab assignment guessing game js.
+
+//I will need to make this script more DRY there is a lot of code repitition and I probably should change totalQuestions to be more dynamic vs a hard coded value.
 
 var userName = prompt('What is your name?');
 console.log('The userName is: ' + userName);
 
 var score = 0;
-var totalQuestions = 4;
+var totalQuestions = 5;
 
 alert('Hello ' + userName + ' Let\'s play a guessing game about me! Please type Y or N.');
 
@@ -48,6 +50,17 @@ if (answer4 === 'Y' || answer4 === 'YES') {
   score++;
 } else if (answer4 === 'N' || answer4 === 'NO'){
   alert('No, I did test JavaScript, Android, iOS, and Ruby on Rails.');
+} else {
+  alert('You must enter in Y or N, you failed this question.');
+}
+
+var answer5 = prompt('Was I an SDET at Dashwire?').toUpperCase();
+console.log('User\'s answer  to question 5: ' + answer5);
+if (answer5 === 'Y' || answer5 === 'YES') {
+  alert('No, I was a QA Technician at Dashwire.');
+} else if (answer5 === 'N' || answer5 === 'NO'){
+  alert('You are correct.');
+  score++;
 } else {
   alert('You must enter in Y or N, you failed this question.');
 }
