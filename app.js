@@ -77,8 +77,12 @@ for (var tries = 4; tries > 0; tries--){
   console.log('User\'s answer to question 6: ' + answer6);
   if (isNaN(parseInt(answer6))){
     alert('Please enter a number in number form.');
+  } else if (parseInt(answer6) < solution6){
+    alert('Your guess is too low.');
+  } else if (parseInt(answer6) > solution6){
+    alert('Your guess is too high.');
   } else if (parseInt(answer6) === solution6){
-    alert('You guessed correctly, the correct answer is ' + solution6);
+    alert('You have guessed correctly, the correct answer is ' + solution6);
     score++;
     break;
   }
