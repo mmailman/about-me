@@ -8,6 +8,8 @@ console.log('The userName is: ' + userName);
 var score = 0;
 var totalQuestions = 7;
 
+var yesNoSolutions = [['The language I did cucumber in was JavaScript? (Y/N)','NO'],['The month and year I started at GeneralUI was September 2013.','YES'],['North Idaho College is the only college/university I attended?','NO'],['Did I test the following technologies, JavaScript, Android, iOS, Ruby on Rails?','YES'],['Was I an SDET at Dashwire?','NO']];
+
 alert('Hello ' + userName + ' Let\'s play a guessing game about me! Please type Y or N.');
 
 //Question 1
