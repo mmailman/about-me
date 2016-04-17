@@ -1,0 +1,29 @@
+* {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F1F1D4;
+}
+
+ul {
+  list-style: circle;;
+}
+
+ol {
+  list-style: upper-roman;
+}
+
+section > heading {
+  text-decoration: underline;
+}
+
+article > p {
+  text-indent: 1.5em;
+}
+
+.location {
+  font-style: italic;;
+}
+
+#main-heading {
+  text-align: center;
+  line-height: 5px;
+}
